@@ -3,13 +3,13 @@ import React from 'react';
 const ProgrammingLanguage = props => {
   switch (props.lang) {
     case 'HTML':
-      return <p><i className="fab fa-html5"></i> {props.lang}</p>
+      return <span><i className="fab fa-html5"></i> {props.lang}</span>
     case 'JavaScript':
-      return <p><i className="fab fa-js"></i> {props.lang}</p>
+      return <span><i className="fab fa-js"></i> {props.lang}</span>
     case 'Python':
-      return <p><i className="fab fa-python"></i> {props.lang}</p>
+      return <span><i className="fab fa-python"></i> {props.lang}</span>
     case 'C#':
-      return <p><i className="fab fa-windows"></i> {props.lang}</p>
+      return <span><i className="fab fa-windows"></i> {props.lang}</span>
 
     default:
       return '';

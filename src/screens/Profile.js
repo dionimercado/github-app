@@ -55,15 +55,11 @@ class Profile extends React.Component {
                       <div className="card-body">
                         <h4 className="card-title"><a href={repo.html_url}>{repo.name}</a></h4>
                         <p className="card-text">{repo.description}</p>
-                        <div>
+                        <p>
                           <Language lang={repo.language} />
-                          <p>
-                            <i className={repo.stargazers_count > 0 ? 'ml-3 fas fa-star' : 'ml-3 far fa-star'}></i> {repo.stargazers_count}
-                          </p>
-                          <p>
-                            <i className="ml-3 fas fa-code-branch"></i> {repo.forks_count}
-                          </p>
-                        </div>
+                          <i className={repo.stargazers_count > 0 ? 'ml-3 fas fa-star' : 'ml-3 far fa-star'}></i> {repo.stargazers_count}
+                          <i className="ml-3 fas fa-code-branch"></i> {repo.forks_count}
+                        </p>
                       </div>
                     </div>
                   </div>
